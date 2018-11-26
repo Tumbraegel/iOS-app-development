@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var poundRate: UITextField!
+    @IBOutlet weak var dollarRate: UITextField!
+    @IBOutlet weak var dollarAmount: UITextField!
+    @IBOutlet weak var euroAmount: UITextField!
+    @IBOutlet weak var poundAmount: UITextField!
+    
+    var calculator = Calculator();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        poundRate.text = "\(calculator.conversionRatePound)";
+        dollarRate.text = "\(calculator.conversionRateDollar)";
     }
 
 
