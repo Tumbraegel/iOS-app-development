@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITextFieldDelegate {
+    
     @IBOutlet weak var poundRate: UITextField!
     @IBOutlet weak var dollarRate: UITextField!
     @IBOutlet weak var dollarAmount: UITextField!
@@ -23,7 +23,30 @@ class ViewController: UIViewController {
         poundRate.text = "\(calculator.conversionRatePound)";
         dollarRate.text = "\(calculator.conversionRateDollar)";
     }
+    
+    
+    @IBAction func dollarRateChanged(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func poundRateChanged(_ sender: Any) {
 
-
+    }
+    
+    func doublify(text : String?) -> Double{
+        if let input = text{
+            if let double = Double(input){
+                return double
+            }
+        }
+        return 0.0
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
+    }
 }
+
 

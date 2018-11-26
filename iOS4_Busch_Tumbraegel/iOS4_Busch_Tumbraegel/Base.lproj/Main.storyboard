@@ -72,6 +72,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="dollarRateChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ZYb-HO-KwJ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="L6L-hC-USQ"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nGw-BN-0TH">
                                 <rect key="frame" x="69" y="113" width="97" height="30"/>
@@ -100,6 +104,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="poundRateChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="unt-hl-Yqh"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="q60-cB-buJ"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

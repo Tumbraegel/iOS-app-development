@@ -9,12 +9,14 @@
 import Foundation
 
 class Calculator{
-    var conversionRatePound: Double;
-    var conversionRateDollar: Double;
+    var conversionRatePound: Double
+    var conversionRateDollar: Double
     
     init(){
         conversionRatePound = 0.8905;
         conversionRateDollar = 1.1449;
     }
+    
+
     
 }
