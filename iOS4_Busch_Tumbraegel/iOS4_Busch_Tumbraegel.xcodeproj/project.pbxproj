@@ -14,7 +14,6 @@
 		7D851C7F21AC2CF300D498B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D851C7D21AC2CF300D498B0 /* LaunchScreen.storyboard */; };
 		7D851C8A21AC2CF300D498B0 /* iOS4_Busch_TumbraegelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D851C8921AC2CF300D498B0 /* iOS4_Busch_TumbraegelTests.swift */; };
 		7D851C9521AC2CF400D498B0 /* iOS4_Busch_TumbraegelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D851C9421AC2CF400D498B0 /* iOS4_Busch_TumbraegelUITests.swift */; };
-		7D851CA521AC36C500D498B0 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D851CA421AC36C500D498B0 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		7D851C9021AC2CF400D498B0 /* iOS4_Busch_TumbraegelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS4_Busch_TumbraegelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D851C9421AC2CF400D498B0 /* iOS4_Busch_TumbraegelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS4_Busch_TumbraegelUITests.swift; sourceTree = "<group>"; };
 		7D851C9621AC2CF400D498B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D851CA421AC36C500D498B0 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +99,6 @@
 			children = (
 				7D851C7421AC2CF200D498B0 /* AppDelegate.swift */,
 				7D851C7621AC2CF200D498B0 /* ViewController.swift */,
-				7D851CA421AC36C500D498B0 /* Calculator.swift */,
 				7D851C7821AC2CF200D498B0 /* Main.storyboard */,
 				7D851C7B21AC2CF300D498B0 /* Assets.xcassets */,
 				7D851C7D21AC2CF300D498B0 /* LaunchScreen.storyboard */,
@@ -261,7 +258,6 @@
 			files = (
 				7D851C7721AC2CF200D498B0 /* ViewController.swift in Sources */,
 				7D851C7521AC2CF200D498B0 /* AppDelegate.swift in Sources */,
-				7D851CA521AC36C500D498B0 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
