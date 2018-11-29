@@ -73,6 +73,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="dollarAmountChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Lrf-uf-aLc"/>
                                     <action selector="dollarRateChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ZYb-HO-KwJ"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="L6L-hC-USQ"/>
                                 </connections>
@@ -83,6 +84,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="dollarAmountChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="LNL-54-s2a"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ITq-5K-lpW">
                                 <rect key="frame" x="69" y="151" width="97" height="30"/>
@@ -90,6 +94,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="euroAmountChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="oXp-0N-Ac2"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YkU-2B-aWU">
                                 <rect key="frame" x="69" y="189" width="97" height="30"/>
@@ -97,6 +104,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="poundAmountChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="lKz-3o-NbC"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1io-xC-A9z">
                                 <rect key="frame" x="112" y="65" width="97" height="30"/>
