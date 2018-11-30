@@ -16,10 +16,11 @@ class CurrencyConverter{
     }
     
     func convertToEuro(amount: Double) -> Double {
-        return amount * conversionRate;
+        print("\(amount) / \(conversionRate) = \(amount / conversionRate)")
+        return amount / conversionRate;
     }
     
     func convertFromEuro(amount: Double) -> Double {
-        return amount / conversionRate;
+        return amount * conversionRate;
     }
 }

@@ -26,28 +26,37 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func dollarAmountChanged(_ sender: Any) {
-        let euroValue = dollarConverter.convertToEuro(amount: 5.0)
-        euroAmount.text = "\(euroValue)"
-        poundAmount.text = "\(poundConverter.convertFromEuro(amount: euroValue))"
+        let euroValue = dollarConverter.convertToEuro(amount: doublify(text: dollarAmount.text))
+        set(currencyField: euroAmount, newValue: euroValue)
+        set(currencyField: poundAmount, newValue: poundConverter.convertFromEuro(amount: euroValue))
     }
+    
     @IBAction func euroAmountChanged(_ sender: Any) {
-        let euroValue = dollarConverter.convertFromEuro(amount: 5.0)
-        dollarAmount.text = "\(euroValue)"
-        poundAmount.text = "\(poundConverter.convertFromEuro(amount: euroValue))"
+        set(currencyField: dollarAmount, newValue: dollarConverter.convertFromEuro(amount: doublify(text: euroAmount.text)))
+        set(currencyField: poundAmount, newValue: poundConverter.convertFromEuro(amount: doublify(text: euroAmount.text)))
     }
+    
     @IBAction func poundAmountChanged(_ sender: Any) {
-        let euroValue = poundConverter.convertToEuro(amount: 5.0)
-        euroAmount.text = "\(euroValue)"
-        dollarAmount.text = "\(dollarConverter.convertFromEuro(amount: euroValue))"
+        let euroValue = poundConverter.convertToEuro(amount: doublify(text: poundAmount.text))
+        set(currencyField: dollarAmount, newValue: dollarConverter.convertFromEuro(amount: euroValue))
+        set(currencyField: euroAmount, newValue: euroValue)
     }
     
     @IBAction func dollarRateChanged(_ sender: Any) {
-        print(doublify(text: dollarRate.text))
+        
     }
     
     
     @IBAction func poundRateChanged(_ sender: Any) {
 
+    }
+    
+    func set(currencyField: UITextField, newValue: Double){
+        currencyField.text = shortenDoubleToString(inputValue: newValue)
+    }
+    
+    func shortenDoubleToString(inputValue: Double) -> String {
+        return String(format: "%.2lf", inputValue)
     }
     
     func doublify(text : String?) -> Double{
@@ -64,5 +73,3 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return false
     }
 }
-
-

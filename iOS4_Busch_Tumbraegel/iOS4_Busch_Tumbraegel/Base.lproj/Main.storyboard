@@ -125,10 +125,10 @@
                     </view>
                     <connections>
                         <outlet property="dollarAmount" destination="nGw-BN-0TH" id="Ieg-Hc-Sch"/>
-                        <outlet property="dollarRate" destination="1io-xC-A9z" id="prQ-t1-Tdc"/>
+                        <outlet property="dollarRate" destination="1HB-sd-l7O" id="3s3-JC-PHC"/>
                         <outlet property="euroAmount" destination="ITq-5K-lpW" id="ZC7-BP-Jsz"/>
                         <outlet property="poundAmount" destination="YkU-2B-aWU" id="bQq-GA-Nc2"/>
-                        <outlet property="poundRate" destination="1HB-sd-l7O" id="8cv-fH-nqg"/>
+                        <outlet property="poundRate" destination="1io-xC-A9z" id="kxl-ac-uzT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
