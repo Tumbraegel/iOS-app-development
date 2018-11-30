@@ -85,6 +85,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="dollarAmountChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="LNL-54-s2a"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="f7b-zk-eNn"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ITq-5K-lpW">
@@ -95,6 +96,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="euroAmountChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="oXp-0N-Ac2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="jfa-AN-jV5"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YkU-2B-aWU">
@@ -105,6 +107,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="poundAmountChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="lKz-3o-NbC"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NIj-32-DrU"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1io-xC-A9z">
