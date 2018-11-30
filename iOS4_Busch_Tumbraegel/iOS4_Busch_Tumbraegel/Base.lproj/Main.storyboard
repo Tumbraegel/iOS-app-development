@@ -75,6 +75,7 @@
                                 <connections>
                                     <action selector="dollarAmountChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Lrf-uf-aLc"/>
                                     <action selector="dollarRateChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ZYb-HO-KwJ"/>
+                                    <action selector="poundRateChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="w8v-BI-Gk6"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="L6L-hC-USQ"/>
                                 </connections>
                             </textField>
@@ -115,6 +116,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="dollarRateChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="RkK-Ct-mcO"/>
                                     <action selector="poundRateChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="unt-hl-Yqh"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="q60-cB-buJ"/>
                                 </connections>

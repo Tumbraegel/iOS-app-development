@@ -43,12 +43,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func dollarRateChanged(_ sender: Any) {
-        
+        dollarConverter.conversionRate = doublify(text: dollarRate.text)
+        let euroValue = dollarConverter.convertToEuro(amount: doublify(text: dollarAmount.text))
+        set(currencyField: euroAmount, newValue: euroValue)
+        set(currencyField: poundAmount, newValue: poundConverter.convertFromEuro(amount: euroValue))
     }
     
-    
     @IBAction func poundRateChanged(_ sender: Any) {
-
+        poundConverter.conversionRate = doublify(text: poundRate.text)
+        let euroValue = poundConverter.convertToEuro(amount: doublify(text: poundAmount.text))
+        set(currencyField: euroAmount, newValue: euroValue)
+        set(currencyField: dollarAmount, newValue: dollarConverter.convertFromEuro(amount: euroValue))
     }
     
     func set(currencyField: UITextField, newValue: Double){

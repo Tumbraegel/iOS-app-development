@@ -16,7 +16,6 @@ class CurrencyConverter{
     }
     
     func convertToEuro(amount: Double) -> Double {
-        print("\(amount) / \(conversionRate) = \(amount / conversionRate)")
         return amount / conversionRate;
     }
     
